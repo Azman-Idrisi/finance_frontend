@@ -37,7 +37,7 @@ interface Transaction {
   description: string;
   date: string;
   createdAt: string;
-  category: string;
+  
 }
 
 interface TransactionStats {
@@ -46,7 +46,7 @@ interface TransactionStats {
   expenses: number;
 }
 
-const API_BASE_URL = "https://finance-seven-mu.vercel.app/";
+const API_BASE_URL = "https://finance-seven-mu.vercel.app";
 
 const socket = io(API_BASE_URL, {
   transports: ["websocket", "polling"],
@@ -223,6 +223,7 @@ const Dashboard = () => {
                     placeholder="Enter amount (negative for expenses)"
                     required
                   />
+                  
                 </div>
                 <div>
                   <Label htmlFor="description">Description</Label>
