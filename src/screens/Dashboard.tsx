@@ -46,7 +46,7 @@ interface TransactionStats {
   expenses: number;
 }
 
-const API_BASE_URL = "https://finance-seven-mu.vercel.app";
+const API_BASE_URL = "http://13.203.157.175:3000/";
 
 const socket = io(API_BASE_URL, {
   transports: ["websocket", "polling"],
